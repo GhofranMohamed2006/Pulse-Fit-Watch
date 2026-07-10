@@ -15,20 +15,23 @@ body {
 
 button {
     cursor: pointer;
+    padding: 10px;
+    text-align: center;
 }
 
 .header {
     display: flex;
     padding: 10px;
     font-weight: bold;
+    width: 100%;
+    justify-content: center;
 }
 
 .header ul{
     list-style-type: none;
     display: flex;
-    width: 75%;
     justify-content: space-around;
-    flex-wrap: wrap;
+    gap: 10px;
 }
 
 .header ul a {
@@ -45,6 +48,9 @@ button {
 .header button {
     margin-top: 3px;
     padding: 2px;
+    margin-left: 10px;
+    text-align: center;
+    font-weight: bold;
 }
 
 .btn {
@@ -52,7 +58,6 @@ button {
     color: #82cfab;
     border: none;
     width: 100px;
-    padding-top: 2px;
     margin-left: 5px;
     border-radius: 10px;
     font-weight: bold;
@@ -117,6 +122,7 @@ button {
     text-align: center;
     padding: 10px;
     margin-bottom: 20px;
+    width: 100%;
 }
 
 .about h4 {
@@ -130,6 +136,10 @@ button {
 
 .about div {
     padding-bottom: 20px;
+}
+
+.pricing {
+    text-align: center;
 }
 
 .plan div{
@@ -163,12 +173,17 @@ button {
     margin-bottom: 10px;
 }
 
+.contact {
+    text-align: center;
+}
+
 .contact form {
     border: 2px solid #275d46;
     padding: 20px;
-    margin: 20px;
-    font-size: 18px;
+    margin: 50px auto;
+    font-size: 15px;
     text-align: center;
+    width: fit-content;
 }
 
 .contact form input {
@@ -181,7 +196,6 @@ button {
     background-color: #022b22;
     color: #82cfab;
     border: none;
-    width: 300px;
     padding: 10px;
     border-radius: 10px;
     font-weight: bold;
@@ -191,15 +205,21 @@ button {
 .contact .contact-info {
     border: 2px solid #275d46;
     padding: 20px;
+    margin: 50px auto;
     font-size: 20px;
     text-align: center;
+    width: fit-content;
 }
 
 .contact-info div {
     background-color: #022b22;
     padding: 10px;
+    margin: 10px;
     border: 2px solid #275d46;
     margin-bottom: 10px;
+    width: fit-content;
+    text-align: center;
+    justify-self: center;
 }
 
 .contact ul {
@@ -230,6 +250,10 @@ footer {
     }
     .header {
         font-size: 30px;
+        justify-content: space-evenly;
+    }
+    .header ul {
+        gap: 25px;
     }
     .header button {
         width: 150px;
@@ -278,6 +302,10 @@ footer {
         width: 50vw;
         margin: 50px auto;
         text-align: center;
+        font-size: 30px;
+    }
+    .contact form button {
+        width: 30vw;
     }
     .contact-info {
         width: 50vw;
