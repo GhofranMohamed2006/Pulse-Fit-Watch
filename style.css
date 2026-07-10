@@ -1,0 +1,309 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Playfair Display", serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #0F172A;
+    color: #00E5A8;
+}
+
+button {
+    cursor: pointer;
+}
+
+.header {
+    display: flex;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.header ul{
+    list-style-type: none;
+    display: flex;
+    width: 75%;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.header ul a {
+    text-decoration: none;
+    color: #82cfab;
+}
+
+.header ul li a.active {
+    color: #64fd95;
+    border-bottom: 2px solid #64fd95;
+    padding-bottom: 5px;
+}
+
+.header button {
+    margin-top: 3px;
+    padding: 2px;
+}
+
+.btn {
+    background-color: #022b22;
+    color: #82cfab;
+    border: none;
+    width: 100px;
+    padding-top: 2px;
+    margin-left: 5px;
+    border-radius: 10px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.hero {
+    padding: 10px;
+    margin: 20px;
+}
+
+.hero h1,
+.hero h3,
+.hero p {
+    margin-bottom: 10px;
+}
+
+.hero .p1 {
+    color: #275d46;
+}
+
+.hero span {
+    color: #64fd95;
+}
+
+.hero img {
+    width: 80vw;
+    margin: 50px auto;
+    box-shadow: 5px 5px 15px #00E5A8;
+}
+
+.features h2,
+.features h4 {
+    text-align: center;
+}
+
+.features h2 {
+    color: #357a5c;
+}
+
+.cards div {
+    text-align: center;
+    background-color: #1E293B;
+    margin: 20px;
+    border: 2px solid #275d46;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.cards .icon {
+    width: 50vw;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px #00E5A8;
+}
+
+.cards p {
+    padding: 10px;
+}
+
+.about {
+    background-color: #1E293B;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.about h4 {
+    margin-bottom: 10px;
+}
+
+.about h2 {
+    color: #357a5c;
+    margin-bottom: 10px;
+}
+
+.about div {
+    padding-bottom: 20px;
+}
+
+.plan div{
+    border: 2px solid #275d46;
+    background-color: #1E293B;
+    padding: 20px;
+    margin: 50px auto;
+    text-align: center;
+    border-radius: 20px;
+    width: 50vw;
+}
+
+.pricing .plan h1 {
+    padding-bottom: 10px;
+    color: #64fd95;
+}
+
+.pricing div ul {
+    list-style-type: none;
+}
+
+.contact {
+    margin: 20px;
+}
+.contact h4 {
+    margin-bottom: 10px;
+}
+
+.contact h2 {
+    color: #357a5c;
+    margin-bottom: 10px;
+}
+
+.contact form {
+    border: 2px solid #275d46;
+    padding: 20px;
+    margin: 20px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.contact form input {
+    background-color: #022b22;
+    color: #82cfab;
+    padding: 5px;
+}
+
+.contact form button {
+    background-color: #022b22;
+    color: #82cfab;
+    border: none;
+    width: 300px;
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.contact .contact-info {
+    border: 2px solid #275d46;
+    padding: 20px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.contact-info div {
+    background-color: #022b22;
+    padding: 10px;
+    border: 2px solid #275d46;
+    margin-bottom: 10px;
+}
+
+.contact ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    list-style-type: none;
+}
+
+.contact img {
+    width: 35px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+footer {
+    border-top: 1px solid #1e1e1e;
+    padding: 10px;
+    text-align: center;
+    color: #b0b0b0;
+    font-size: 15px;
+}
+
+@media (min-width: 768px) {
+    body {
+        font-size: 40px;
+        width: 100%;
+    }
+    .header {
+        font-size: 30px;
+    }
+    .header button {
+        width: 150px;
+        font-size: 25px;
+        padding: 5px;
+    }
+    .hero {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 50px;
+        margin: 20px auto;
+    }
+    .hero img {
+        width: 45vw;
+    }
+    .hero button,
+    .plan button {
+        width: 150px;
+        font-size: 25px;
+        padding: 5px;
+        margin-top: 20px;
+    }
+    .cards {
+        display: flex;
+        font-size: 20px;
+        justify-content: space-between;
+        text-align: justify;
+    }
+    .cards p {
+        padding: 5px 5px 10px 5px;
+    }
+    .cards .icon {
+        width: 10vw;
+    }
+    .plan {
+        display: flex;
+        gap: 50px;
+    }
+    .pricing {
+        text-align: center;
+    }
+    .contact {
+        text-align: center;
+    }
+    .contact form {
+        width: 50vw;
+        margin: 50px auto;
+        text-align: center;
+    }
+    .contact-info {
+        width: 50vw;
+        margin: 50px auto;
+        text-align: center;
+    }
+    .contact-info div {
+        width: 25vw;
+        margin: 50px auto;
+    }
+    button,
+    .cards div,
+    .contact-info div {
+        cursor: pointer;
+        transition: 0.3s ease;
+    }
+    button:hover, 
+    .cards div:hover,
+    .contact-info div:hover {
+        transform: scale(1.3);
+        background-color: #275d46;
+    }
+    .contact img {
+        transition: 0.3s ease;
+    }
+    .contact img:hover {
+        transform: scale(1.3);
+    }
+}
